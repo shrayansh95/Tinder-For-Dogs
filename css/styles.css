@@ -79,9 +79,20 @@ p {
 
 .title-img {
     width: 60%;
-    transform: rotate(25deg);
     position: absolute;
+    transform: rotate(25deg);
     right: 28%;
+    -webkit-animation: mover 6s infinite  alternate;
+    animation: mover 6s infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
 }
 
 /* Features */
@@ -191,16 +202,24 @@ p {
 
 .fa-twitter:hover {
     color: #1DA1F2;
+    scale: 1.2;
+    cursor: pointer;
 }
 
 .fa-facebook-f:hover {
     color: #4267B2;
+    scale: 1.2;
+    cursor: pointer;
 }
 
 .fa-instagram:hover {
     color: #C13584;
+    scale: 1.2;
+    cursor: pointer;
 }
 
 .fa-envelope:hover {
     color: #c71610;
+    scale: 1.2;
+    cursor: pointer;
 }
